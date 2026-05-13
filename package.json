@@ -1,0 +1,31 @@
+{
+  "name": "@wpmoo/odoo-skills",
+  "version": "0.1.0",
+  "description": "Agent Skills for Odoo, OCA-compatible addon development, porting, and open-core Odoo products.",
+  "type": "module",
+  "bin": {
+    "odoo-skills": "bin/install.js"
+  },
+  "files": [
+    "skills",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "pi-package",
+    "agent-skills",
+    "odoo",
+    "oca",
+    "wpmoo"
+  ],
+  "pi": {
+    "skills": [
+      "./skills"
+    ]
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
