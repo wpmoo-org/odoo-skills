@@ -59,4 +59,6 @@ development environments when `--agent-skills-template` is enabled.
 
 If this project helps you, you can support the work here:
 
-[![Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/cangir)
+<a href="https://www.buymeacoffee.com/cangir">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="250">
+</a>
