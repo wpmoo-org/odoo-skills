@@ -53,3 +53,10 @@ This copies the skills into:
 
 `@wpmoo/odoo-dev` can also copy this package/repository into generated Odoo
 development environments when `--agent-skills-template` is enabled.
+
+
+## Support
+
+If this project helps you, you can support the work here:
+
+[![Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/cangir)
