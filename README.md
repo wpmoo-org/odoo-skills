@@ -1,5 +1,7 @@
 # WPMoo Odoo Skills
 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&style=flat-square)](https://github.com/wpmoo-org/odoo-skills) [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE) [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?logo=buymeacoffee&logoColor=000000&style=flat-square)](https://www.buymeacoffee.com/cangir)
+
 Generic Agent Skills for Odoo/OCA-compatible addon development, Odoo addon
 porting, and open-core community/pro products.
 
