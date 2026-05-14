@@ -1,7 +1,7 @@
 {
   "name": "@wpmoo/odoo-skills",
   "version": "0.1.0",
-  "description": "Agent Skills for Odoo, OCA-compatible addon development, porting, and open-core Odoo products.",
+  "description": "Agent Skills for Odoo versions, OCA quality, testing, security, migration, frontend, performance, integrations, i18n, deployment, and open-core products.",
   "type": "module",
   "repository": {
     "type": "git",
@@ -25,6 +25,8 @@
     "agent-skills",
     "odoo",
     "oca",
+    "openupgrade",
+    "odoo-development",
     "wpmoo"
   ],
   "pi": {

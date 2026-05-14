@@ -1,3 +1,8 @@
+---
+name: odoo-15
+description: Use when creating, reviewing, migrating, or debugging Odoo 15.0 addons, especially OCA-style addons that need 15.0 ORM, view, asset, security, testing, or migration guidance.
+---
+
 # Odoo 15 Development Skill
 
 Use this skill when creating, reviewing, migrating, or debugging Odoo 15.0
@@ -49,4 +54,3 @@ node skills/odoo-15/scripts/validate-addon.mjs /path/to/addon
 Then run the repository's normal OCA checks, typically pre-commit hooks,
 `pylint-odoo --valid-odoo-versions=15.0`, and Odoo tests with the right
 database and `--test-tags`.
-

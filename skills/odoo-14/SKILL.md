@@ -1,3 +1,8 @@
+---
+name: odoo-14
+description: Use when creating, reviewing, migrating, or debugging Odoo 14.0 addons, especially OCA-style addons that need 14.0 ORM, view, asset, security, testing, or migration guidance.
+---
+
 # Odoo 14 Development Skill
 
 Use this skill when creating, reviewing, migrating, or debugging Odoo 14.0
@@ -51,4 +56,3 @@ node skills/odoo-14/scripts/validate-addon.mjs /path/to/addon
 Then run the repository's normal OCA checks, typically pre-commit hooks,
 `pylint-odoo --valid-odoo-versions=14.0`, and Odoo tests with the right
 database and `--test-tags`.
-

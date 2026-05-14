@@ -3,8 +3,8 @@
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&style=flat-square)](https://github.com/wpmoo-org/odoo-skills) [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE) [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?logo=buymeacoffee&logoColor=000000&style=flat-square)](https://www.buymeacoffee.com/cangir)
 
 Generic Agent Skills for Odoo/OCA-compatible addon development, Odoo addon
-porting, open-core community/pro products, and version-specific Odoo 13 through
-19 development.
+porting, open-core community/pro products, version-specific Odoo 13 through 19
+development, and common Odoo engineering workflows.
 
 These skills are intentionally not project-specific. Project or module-specific
 agent guidance should live in that project/module's own `AGENTS.md` or custom
@@ -42,11 +42,31 @@ skills/
 │   ├── SKILL.md
 │   ├── references/
 │   └── scripts/
+├── odoo-addon-factory/
+│   └── SKILL.md
+├── odoo-deployment-ops/
+│   └── SKILL.md
+├── odoo-frontend/
+│   └── SKILL.md
+├── odoo-i18n-l10n/
+│   └── SKILL.md
+├── odoo-integrations/
+│   └── SKILL.md
+├── odoo-migration-openupgrade/
+│   └── SKILL.md
 ├── odoo-oca/
+│   └── SKILL.md
+├── odoo-oca-quality/
 │   └── SKILL.md
 ├── odoo-open-core/
 │   └── SKILL.md
-└── odoo-porting/
+├── odoo-performance/
+│   └── SKILL.md
+├── odoo-porting/
+│   └── SKILL.md
+├── odoo-security-review/
+│   └── SKILL.md
+└── odoo-testing/
     └── SKILL.md
 ```
 
@@ -91,6 +111,31 @@ Example:
 ```bash
 node .agents/skills/odoo-19/scripts/validate-addon.mjs addons/my_addon
 ```
+
+## Domain workflow skills
+
+The domain skills cover recurring Odoo engineering workflows that are shared
+across versions:
+
+- `odoo-addon-factory` for creating new addons with OCA-compatible structure,
+  manifests, security, views, tests, and documentation.
+- `odoo-oca-quality` for OCA repository hygiene, pre-commit, linting, README,
+  versioning, and review readiness.
+- `odoo-testing` for Python, HTTP, frontend, tour, and install/update tests.
+- `odoo-security-review` for ACLs, record rules, field groups, controller
+  security, `sudo()` usage, RPC exposure, and multi-company access.
+- `odoo-migration-openupgrade` for OCA/OpenUpgrade migration planning, scripts,
+  noupdate handling, XML ID stability, and migration PR flow.
+- `odoo-frontend` for legacy JS, manifest assets, Owl, registries, templates,
+  QUnit/tour/HOOT differences, and version-specific frontend checks.
+- `odoo-performance` for ORM batching, query reduction, computed field cost,
+  indexes, profiling, and safe SQL usage.
+- `odoo-integrations` for controllers, webhooks, cron, queues, retries,
+  idempotency, credentials, and external API boundaries.
+- `odoo-i18n-l10n` for translations, `.pot`/`.po` updates, multi-language
+  behavior, localization addons, and l10n-sensitive tests.
+- `odoo-deployment-ops` for Odoo config, workers, cron workers, addons path,
+  filestore, backups, Docker, upgrades, and operational checks.
 
 ## Pi package usage
 

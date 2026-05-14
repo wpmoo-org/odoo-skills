@@ -10,7 +10,8 @@ that should stay compatible with OCA conventions.
 
 ## Repository rules
 
-- Use one Git branch per Odoo major version: `16.0`, `17.0`, `18.0`, `19.0`.
+- Use one Git branch per Odoo major version: `13.0` through `19.0` in this
+  skill pack.
 - Keep each branch compatible with exactly one Odoo major version.
 - Keep environment, deployment, and generated DevOps files outside addon source repositories.
 - Keep each addon in its own top-level directory inside the addon repository.
@@ -43,13 +44,18 @@ Example manifest skeleton:
 }
 ```
 
-## Odoo 19 compatibility reminders
+## Version routing
 
-- Use list views with `<list>`, not `<tree>`.
-- Prefer direct view expressions such as `invisible="..."` instead of `attrs`.
-- Use `models.Constraint` instead of `_sql_constraints` for new Odoo 19 code.
-- Use `@api.ondelete(at_uninstall=False)` for business delete validation.
-- Avoid `default_*` field names in `res.config.settings`.
+- Load the matching version skill before changing syntax-sensitive code:
+  `odoo-13`, `odoo-14`, `odoo-15`, `odoo-16`, `odoo-17`, `odoo-18`, or
+  `odoo-19`.
+- Odoo 13 and 14 use legacy frontend asset patterns.
+- Odoo 15 and 16 use manifest asset bundles but still use `<tree>` list views
+  and `attrs`/`states` modifiers.
+- Odoo 17 still uses `<tree>` but uses direct XML modifier expressions.
+- Odoo 18 and 19 use `<list>` list views and `list,form` action modes.
+- Odoo 19 has additional ORM/API changes such as `models.Constraint` and
+  JSON-RPC route naming.
 
 ## Testing and quality checks
 

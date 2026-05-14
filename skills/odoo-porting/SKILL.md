@@ -1,6 +1,6 @@
 ---
 name: odoo-porting
-description: Use when forward-porting or backporting Odoo addons between Odoo version branches, especially OCA-style branches such as 17.0, 18.0, and 19.0.
+description: Use when forward-porting or backporting Odoo addons between Odoo version branches, especially OCA-style branches such as 13.0 through 19.0.
 ---
 
 # Odoo Addon Porting
@@ -9,7 +9,7 @@ Use this skill when moving addon changes between Odoo major-version branches.
 
 ## Branch rules
 
-- OCA-style branches are named after Odoo versions: `16.0`, `17.0`, `18.0`, `19.0`.
+- OCA-style branches are named after Odoo versions: `13.0` through `19.0`.
 - Prefer forward-porting one version at a time, for example `17.0 -> 18.0 -> 19.0`.
 - Do not mix unrelated features while porting.
 - Keep the source branch and target branch histories reviewable.
@@ -24,12 +24,21 @@ Use this skill when moving addon changes between Odoo major-version branches.
 6. Install/update the addon in the target version.
 7. Run available tests and pre-commit checks.
 
-## Odoo 19 reminders
+## Version routing
 
-- Replace old tree view declarations with `<list>` where needed.
-- Replace `attrs`/`states` patterns with direct expressions where applicable.
-- Prefer `models.Constraint` for new constraints.
-- Use `@api.ondelete(at_uninstall=False)` for business delete validation.
+- Load the target version skill before changing syntax-sensitive code:
+  `odoo-13`, `odoo-14`, `odoo-15`, `odoo-16`, `odoo-17`, `odoo-18`, or
+  `odoo-19`.
+- Odoo 13 and 14 ports often involve legacy decorators, data ordering, asset XML
+  inheritance, and multi-company behavior.
+- Odoo 15 and 16 ports must review manifest asset bundles while keeping
+  `<tree>` list views and `attrs`/`states`.
+- Odoo 17 ports must convert view modifiers to direct expressions while keeping
+  `<tree>`.
+- Odoo 18 and 19 ports must convert list view roots and action modes to
+  `<list>` and `list,form`.
+- Odoo 19 ports must review ORM/API changes such as `models.Constraint`,
+  Domain usage, and JSON-RPC route naming.
 
 ## Tooling
 
