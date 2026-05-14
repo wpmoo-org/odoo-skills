@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "Agent Skills for Odoo, OCA-compatible addon development, porting, and open-core Odoo products.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpmoo-org/odoo-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wpmoo-org/odoo-skills/issues"
+  },
+  "homepage": "https://github.com/wpmoo-org/odoo-skills#readme",
   "bin": {
     "odoo-skills": "bin/install.js"
   },
