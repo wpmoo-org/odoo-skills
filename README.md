@@ -51,9 +51,38 @@ This copies the skills into:
 
 ## WPMoo CLI usage
 
-`@wpmoo/odoo-dev` can also copy this package/repository into generated Odoo
-development environments when `--agent-skills-template` is enabled.
+The current WPMoo Odoo CLI package is `@wpmoo/odoo`.
 
+For day-to-day workspace commands, use `npx @wpmoo/odoo ...` from the workspace
+or controlling repository:
+
+```bash
+npx @wpmoo/odoo doctor
+npx @wpmoo/odoo snapshot
+npx @wpmoo/odoo restore-snapshot
+```
+
+Generated Odoo development environments provide a local wrapper. From inside
+one of those generated environments, use `./moo ...`:
+
+```bash
+./moo doctor
+./moo resetdb
+./moo lint
+./moo pot
+```
+
+Useful current commands include:
+
+- `doctor` to inspect environment health.
+- `snapshot` before risky local changes.
+- `restore-snapshot` to return to a saved local state.
+- `resetdb` for clean install/update checks.
+- `lint` for configured project quality checks.
+- `pot` when translation templates need regeneration.
+
+The old `@wpmoo/odoo-dev` package name should only appear in deprecated
+compatibility notes. New documentation and examples should use `@wpmoo/odoo`.
 
 ## Support
 

@@ -85,6 +85,22 @@ Place these in community addons when they are required for a useful free core:
 - The pro addon installs in a clean database with only its declared dependencies.
 - The matching community dependency version is tagged or pinned for the same Odoo major version.
 
+## WPMoo command standard
+
+When a repository uses WPMoo tooling, keep command examples on the current
+standard:
+
+- Use `npx @wpmoo/odoo ...` for day-to-day workspace commands.
+- Use `./moo ...` inside generated Odoo development environments.
+- Prefer `doctor` before environment-sensitive work.
+- Use `snapshot` and `restore-snapshot` around risky local changes.
+- Use `resetdb` for clean install/update checks.
+- Use `lint` for configured quality checks.
+- Use `pot` when translation templates need regeneration.
+
+Do not recommend `@wpmoo/odoo-dev` except in explicit deprecated-compatibility
+documentation.
+
 ## Done criteria
 
 - Community/pro dependency direction is correct.

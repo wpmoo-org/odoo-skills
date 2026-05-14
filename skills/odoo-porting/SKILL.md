@@ -36,6 +36,21 @@ Use this skill when moving addon changes between Odoo major-version branches.
 If `oca-port` is available and the repository follows OCA conventions, prefer it
 for repetitive porting mechanics. Still review the result manually.
 
+When a repository uses WPMoo tooling, use the current command standard in
+examples and instructions:
+
+- Use `npx @wpmoo/odoo ...` for day-to-day workspace commands.
+- Use `./moo ...` inside generated Odoo development environments.
+- Run `doctor` before environment-sensitive porting work.
+- Use `snapshot` before porting or migration experiments and `restore-snapshot`
+  when returning to a saved local state.
+- Use `resetdb` for clean target-version install/update checks.
+- Use `lint` for configured project checks.
+- Use `pot` when the port changes translatable strings.
+
+Do not recommend `@wpmoo/odoo-dev` except in explicit deprecated-compatibility
+documentation.
+
 ## Done criteria
 
 - Target branch has the intended functional change only.
