@@ -23,9 +23,9 @@
   already uses Odoo domain objects.
 - Related fields that participate in reporting or domains usually need
   `store=True`.
-- Prefer `odoo.fields.Domain` / `odoo.Domain` style domain objects where the
-  codebase has adopted them. Do not mix styles inside a small change without a
-  reason.
+- Prefer `fields.Domain` / `odoo.fields.Domain` domain objects as documented by
+  Odoo 19.0 where the codebase has adopted them. Do not assume `odoo.Domain` is
+  a public import unless the target code already uses it.
 
 ## Constraints and indexes
 

@@ -21,7 +21,7 @@ Use current official sources first, then repository-local conventions.
 - Controllers:
   <https://www.odoo.com/documentation/16.0/developer/reference/backend/http.html>
 - View architectures:
-  <https://www.odoo.com/documentation/16.0/developer/reference/user_interface/view_architectures.html>
+  <https://www.odoo.com/documentation/16.0/developer/reference/backend/views.html>
 - Assets:
   <https://www.odoo.com/documentation/16.0/developer/reference/frontend/assets.html>
 - JavaScript modules:

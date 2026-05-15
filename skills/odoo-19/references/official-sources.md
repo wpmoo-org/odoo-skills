@@ -34,6 +34,8 @@ Use these sources before relying on memory or third-party examples.
 - Odoo 19 release metadata: https://raw.githubusercontent.com/odoo/odoo/19.0/odoo/release.py
 - Odoo 19 ORM models source: https://raw.githubusercontent.com/odoo/odoo/19.0/odoo/orm/models.py
 - Odoo 19 ORM fields source: https://raw.githubusercontent.com/odoo/odoo/19.0/odoo/orm/fields.py
+- Odoo 19 ORM table objects source: https://raw.githubusercontent.com/odoo/odoo/19.0/odoo/orm/table_objects.py
+- Odoo 19 ORM domains source: https://raw.githubusercontent.com/odoo/odoo/19.0/odoo/orm/domains.py
 
 ## OCA sources
 

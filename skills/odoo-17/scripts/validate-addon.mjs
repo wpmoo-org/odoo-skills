@@ -32,7 +32,7 @@ async function main() {
   for (const file of files) {
     const text = await readFile(file, "utf8");
     if (file.endsWith("__manifest__.py")) {
-      if (!text.includes(`"version": "${VERSION}.`) && !text.includes(`'version': '${VERSION}.`)) {
+      if (!new RegExp(`["']version["']\\s*:\\s*["']${VERSION}\\.`).test(text)) {
         report("ERROR", file, `manifest version must start with ${VERSION}.`);
         failures += 1;
       }
@@ -49,6 +49,10 @@ async function main() {
     if (file.endsWith(".xml")) {
       if (/<list(\s|>)/.test(text)) {
         report("ERROR", file, "Odoo 17.0 list views use <tree>, not <list>.");
+        failures += 1;
+      }
+      if (/<field[^>]+name=["']view_mode["'][^>]*>[^<]*\blist\b[^<]*<\/field>/m.test(text) || /\bview_mode=["'][^"']*\blist\b[^"']*["']/.test(text)) {
+        report("ERROR", file, "Odoo 17.0 action view_mode values use tree, not list.");
         failures += 1;
       }
       if (/\sattrs=/.test(text) || /\sstates=/.test(text)) {
