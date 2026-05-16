@@ -18,4 +18,4 @@ const destination = join(target, '.agents/skills');
 await mkdir(destination, { recursive: true });
 await cp(source, destination, { recursive: true, force: true });
 
-console.log(`Installed WPMoo Odoo Skills into ${destination}`);
+console.log(`Installed WPMoo Skills for Odoo into ${destination}`);

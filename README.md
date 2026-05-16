@@ -1,10 +1,13 @@
-# WPMoo Odoo Skills
+# WPMoo Skills for Odoo
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&style=flat-square)](https://github.com/wpmoo-org/odoo-skills) [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE) [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-FFDD00?logo=buymeacoffee&logoColor=000000&style=flat-square)](https://www.buymeacoffee.com/cangir)
 
 Generic Agent Skills for Odoo/OCA-compatible addon development, Odoo addon
 porting, open-core community/pro products, version-specific Odoo 13 through 19
 development, and common Odoo engineering workflows.
+
+WPMoo Skills for Odoo is an independent project and is not affiliated with,
+endorsed by, or sponsored by Odoo S.A. Odoo is a trademark of Odoo S.A.
 
 These skills are intentionally not project-specific. Project or module-specific
 agent guidance should live in that project/module's own `AGENTS.md` or custom
@@ -167,9 +170,9 @@ This copies the skills into:
 .agents/skills/
 ```
 
-## WPMoo CLI usage
+## CLI usage
 
-The current WPMoo Odoo CLI package is `@wpmoo/odoo`.
+The current CLI package for this skill set is `@wpmoo/odoo`.
 
 For day-to-day workspace commands, use `npx @wpmoo/odoo ...` from the workspace
 or controlling repository:
