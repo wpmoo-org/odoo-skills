@@ -46,13 +46,17 @@ jobs:
       - name: Check tag version
         run: |
           VERSION="$(node -p "require('./package.json').version")"
-          if [[ "${GITHUB_REF_TYPE}" == "tag" ]]; then
-            expected_tag="v$VERSION"
-            if [[ "${GITHUB_REF_NAME}" != "$expected_tag" ]]; then
-              echo "Tag ${GITHUB_REF_NAME} does not match package version $VERSION."
-              echo "Expected tag: $expected_tag"
-              exit 1
-            fi
+          if [[ "${GITHUB_REF_TYPE}" != "tag" ]]; then
+            echo "Publish must run from a version tag, not ${GITHUB_REF_TYPE:-unknown}."
+            echo "Create and push tag v$VERSION, then rerun from that tag if needed."
+            exit 1
+          fi
+
+          expected_tag="v$VERSION"
+          if [[ "${GITHUB_REF_NAME}" != "$expected_tag" ]]; then
+            echo "Tag ${GITHUB_REF_NAME} does not match package version $VERSION."
+            echo "Expected tag: $expected_tag"
+            exit 1
           fi
 
       - name: Check package version

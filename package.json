@@ -14,6 +14,11 @@
   "bin": {
     "odoo-skills": "bin/install.js"
   },
+  "scripts": {
+    "typecheck": "node --check bin/install.js && for f in skills/*/scripts/*.mjs; do node --check \"$f\"; done",
+    "test": "node --test test/*.test.mjs",
+    "pack:check": "npm pack --dry-run"
+  },
   "files": [
     "skills",
     "bin",
