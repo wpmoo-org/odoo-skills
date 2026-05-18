@@ -82,7 +82,7 @@ odoo-bin -d test_db --addons-path=/path/to/addons -u addon_name --test-enable --
 When WPMoo tooling is present, use the current command standard:
 
 ```bash
-npx @wpmoo/odoo doctor
+npx @wpmoo/toolkit doctor
 ./moo lint
 ./moo resetdb
 ./moo pot

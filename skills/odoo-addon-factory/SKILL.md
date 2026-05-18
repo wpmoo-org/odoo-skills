@@ -78,7 +78,7 @@ odoo-bin -d test_db --addons-path=/path/to/addons -i addon_name --test-enable --
 odoo-bin -d test_db --addons-path=/path/to/addons -u addon_name --test-enable --stop-after-init
 ```
 
-When WPMoo tooling is present, prefer `npx @wpmoo/odoo doctor`, `./moo lint`,
+When WPMoo tooling is present, prefer `npx @wpmoo/toolkit doctor`, `./moo lint`,
 `./moo resetdb`, and `./moo pot` where applicable.
 
 ## Done criteria

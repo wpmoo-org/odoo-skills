@@ -47,7 +47,7 @@ pylint-odoo --valid-odoo-versions=<major>.0 addon_name
 When WPMoo tooling is present, use:
 
 ```bash
-npx @wpmoo/odoo doctor
+npx @wpmoo/toolkit doctor
 ./moo lint
 ./moo pot
 ```

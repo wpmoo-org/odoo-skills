@@ -59,7 +59,7 @@ through `skills/odoo-19` skill for version-specific CLI and addon behavior.
 When WPMoo tooling is present:
 
 ```bash
-npx @wpmoo/odoo doctor
+npx @wpmoo/toolkit doctor
 ./moo lint
 ./moo resetdb
 ./moo snapshot

@@ -90,7 +90,7 @@ Place these in community addons when they are required for a useful free core:
 When a repository uses WPMoo tooling, keep command examples on the current
 standard:
 
-- Use `npx @wpmoo/odoo ...` for day-to-day workspace commands.
+- Use `npx @wpmoo/toolkit ...` for day-to-day workspace commands.
 - Use `./moo ...` inside generated Odoo development environments.
 - Prefer `doctor` before environment-sensitive work.
 - Use `snapshot` and `restore-snapshot` around risky local changes.
@@ -98,7 +98,7 @@ standard:
 - Use `lint` for configured quality checks.
 - Use `pot` when translation templates need regeneration.
 
-Do not recommend `@wpmoo/odoo-dev` except in explicit deprecated-compatibility
+Do not recommend `@wpmoo/odoo` or `@wpmoo/odoo-dev` except in explicit deprecated-compatibility
 documentation.
 
 ## Done criteria

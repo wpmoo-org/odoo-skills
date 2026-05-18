@@ -172,15 +172,15 @@ This copies the skills into:
 
 ## CLI usage
 
-The current CLI package for this skill set is `@wpmoo/odoo`.
+The current CLI package for this skill set is `@wpmoo/toolkit`.
 
-For day-to-day workspace commands, use `npx @wpmoo/odoo ...` from the workspace
+For day-to-day workspace commands, use `npx @wpmoo/toolkit ...` from the workspace
 or controlling repository:
 
 ```bash
-npx @wpmoo/odoo doctor
-npx @wpmoo/odoo snapshot
-npx @wpmoo/odoo restore-snapshot
+npx @wpmoo/toolkit doctor
+npx @wpmoo/toolkit snapshot
+npx @wpmoo/toolkit restore-snapshot
 ```
 
 Generated Odoo development environments provide a local wrapper. From inside
@@ -202,8 +202,9 @@ Useful current commands include:
 - `lint` for configured project quality checks.
 - `pot` when translation templates need regeneration.
 
-The old `@wpmoo/odoo-dev` package name should only appear in deprecated
-compatibility notes. New documentation and examples should use `@wpmoo/odoo`.
+The old `@wpmoo/odoo` and `@wpmoo/odoo-dev` package names should only appear in
+deprecated compatibility notes. New documentation and examples should use
+`@wpmoo/toolkit`.
 
 ## Support
 

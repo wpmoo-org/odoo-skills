@@ -48,7 +48,7 @@ for repetitive porting mechanics. Still review the result manually.
 When a repository uses WPMoo tooling, use the current command standard in
 examples and instructions:
 
-- Use `npx @wpmoo/odoo ...` for day-to-day workspace commands.
+- Use `npx @wpmoo/toolkit ...` for day-to-day workspace commands.
 - Use `./moo ...` inside generated Odoo development environments.
 - Run `doctor` before environment-sensitive porting work.
 - Use `snapshot` before porting or migration experiments and `restore-snapshot`
@@ -57,7 +57,7 @@ examples and instructions:
 - Use `lint` for configured project checks.
 - Use `pot` when the port changes translatable strings.
 
-Do not recommend `@wpmoo/odoo-dev` except in explicit deprecated-compatibility
+Do not recommend `@wpmoo/odoo` or `@wpmoo/odoo-dev` except in explicit deprecated-compatibility
 documentation.
 
 ## Done criteria

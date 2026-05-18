@@ -78,7 +78,7 @@ or the equivalent Odoo command with `--test-enable` and `--stop-after-init`.
 When a repository uses WPMoo tooling, keep command examples on the current
 standard:
 
-- Use `npx @wpmoo/odoo ...` for day-to-day workspace commands.
+- Use `npx @wpmoo/toolkit ...` for day-to-day workspace commands.
 - Use `./moo ...` inside generated Odoo development environments.
 - Start with `doctor` when environment state matters.
 - Use `snapshot` before risky local changes and `restore-snapshot` to return to
@@ -87,7 +87,7 @@ standard:
 - Use `lint` for configured project quality checks.
 - Use `pot` when views, labels, help text, or other translated strings change.
 
-Do not recommend `@wpmoo/odoo-dev` except in explicit deprecated-compatibility
+Do not recommend `@wpmoo/odoo` or `@wpmoo/odoo-dev` except in explicit deprecated-compatibility
 documentation.
 
 ## Porting rules

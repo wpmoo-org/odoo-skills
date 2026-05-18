@@ -69,7 +69,7 @@ Then validate functional flows with business users or fixtures, including
 logins, menus, reports, scheduled actions, email templates, accounting periods,
 inventory valuation, and critical custom workflows.
 
-When WPMoo tooling is present, start with `npx @wpmoo/odoo doctor`; use `./moo`
+When WPMoo tooling is present, start with `npx @wpmoo/toolkit doctor`; use `./moo`
 commands inside generated environments.
 
 ## Done criteria
