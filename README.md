@@ -65,6 +65,10 @@ skills/
 │   └── SKILL.md
 ├── odoo-performance/
 │   └── SKILL.md
+├── odoo-portal/
+│   └── SKILL.md
+├── odoo-portal-design-system/
+│   └── SKILL.md
 ├── odoo-porting/
 │   └── SKILL.md
 ├── odoo-security-review/
